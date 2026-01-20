@@ -1,0 +1,194 @@
+{
+  "design_system": {
+    "identity": {
+      "name": "Nex.AI",
+      "archetype": "Organic & Earthy",
+      "tone": "Calm, Personal, Intelligent, Non-robotic",
+      "vibe": "A warm, sunlit room. Not a cold server farm."
+    },
+    "typography": {
+      "font_family": {
+        "heading": "Manrope, sans-serif",
+        "body": "Plus Jakarta Sans, sans-serif",
+        "mono": "JetBrains Mono, monospace"
+      },
+      "weights": {
+        "heading": "600",
+        "body": "400",
+        "bold": "600"
+      },
+      "scale": {
+        "h1": "text-4xl md:text-5xl tracking-tight",
+        "h2": "text-3xl md:text-4xl tracking-tight",
+        "h3": "text-2xl md:text-3xl tracking-tight",
+        "body": "text-base md:text-lg leading-relaxed",
+        "small": "text-sm leading-normal"
+      }
+    },
+    "colors": {
+      "palette": {
+        "primary": {
+          "DEFAULT": "#E07A5F",
+          "foreground": "#FFFFFF",
+          "hover": "#D06950",
+          "description": "Terracotta - Warmth, Human connection. Use for User bubbles, Primary Actions."
+        },
+        "secondary": {
+          "DEFAULT": "#81B29A",
+          "foreground": "#FFFFFF",
+          "hover": "#71A28A",
+          "description": "Soft Teal - Calm, Intelligence. Use for AI identity, Success states, Accents."
+        },
+        "background": {
+          "DEFAULT": "#FDFCF8",
+          "paper": "#F4F1DE",
+          "subtle": "#EAE7DC",
+          "description": "Warm Off-White & Bone. Never pure white (#FFFFFF) for main backgrounds."
+        },
+        "text": {
+          "primary": "#3D405B",
+          "secondary": "#6D6F7C",
+          "muted": "#9CA3AF",
+          "description": "Deep Charcoal & Warm Grey. High contrast but soft."
+        },
+        "accent": {
+          "DEFAULT": "#F2CC8F",
+          "foreground": "#3D405B",
+          "description": "Soft Gold - Use sparingly for highlights or 'premium' features."
+        },
+        "destructive": {
+          "DEFAULT": "#EF4444",
+          "foreground": "#FFFFFF"
+        }
+      },
+      "gradients": {
+        "subtle_warm": "bg-gradient-to-br from-[#FDFCF8] to-[#F4F1DE]",
+        "soft_glow": "bg-gradient-to-r from-[#E07A5F]/10 to-[#81B29A]/10"
+      }
+    },
+    "layout": {
+      "spacing": {
+        "container_padding": "p-6 md:p-12",
+        "section_gap": "gap-8 md:gap-16",
+        "element_gap": "gap-4"
+      },
+      "radius": {
+        "default": "rounded-2xl",
+        "button": "rounded-full",
+        "card": "rounded-3xl",
+        "input": "rounded-2xl"
+      },
+      "shadows": {
+        "soft": "shadow-[0_4px_20px_-4px_rgba(61,64,91,0.05)]",
+        "lifted": "shadow-[0_10px_40px_-10px_rgba(61,64,91,0.1)]",
+        "inner": "shadow-[inset_0_2px_4px_0_rgba(0,0,0,0.02)]"
+      },
+      "grids": {
+        "marketing": "grid-cols-1 md:grid-cols-12 gap-8",
+        "dashboard": "grid-cols-1 md:grid-cols-4 gap-6"
+      }
+    },
+    "components": {
+      "buttons": {
+        "primary": "bg-[#E07A5F] text-white hover:bg-[#D06950] rounded-full px-8 py-6 text-lg font-medium transition-transform active:scale-95 shadow-soft",
+        "secondary": "bg-[#F4F1DE] text-[#3D405B] hover:bg-[#EAE7DC] rounded-full px-6 py-4 font-medium",
+        "ghost": "text-[#6D6F7C] hover:text-[#E07A5F] hover:bg-[#E07A5F]/5 rounded-full px-4 py-2"
+      },
+      "inputs": {
+        "default": "bg-white border border-[#EAE7DC] focus:border-[#81B29A] focus:ring-2 focus:ring-[#81B29A]/20 rounded-2xl px-6 py-4 text-lg shadow-inner placeholder:text-[#9CA3AF]",
+        "chat": "bg-white border-0 shadow-lifted rounded-3xl px-6 py-5 text-lg focus:ring-0"
+      },
+      "cards": {
+        "default": "bg-white rounded-3xl border border-[#F4F1DE] shadow-soft p-8"
+      },
+      "chat_bubbles": {
+        "user": "bg-[#E07A5F] text-white rounded-2xl rounded-tr-sm px-6 py-4 max-w-[80%]",
+        "ai": "bg-[#F4F1DE] text-[#3D405B] rounded-2xl rounded-tl-sm px-6 py-4 max-w-[80%] shadow-sm"
+      }
+    },
+    "motion": {
+      "typing_effect": {
+        "type": "stagger",
+        "duration": 0.02,
+        "description": "Word-by-word reveal for AI responses. Must feel natural, not mechanical."
+      },
+      "page_transition": {
+        "initial": { "opacity": 0, "y": 20 },
+        "animate": { "opacity": 1, "y": 0 },
+        "exit": { "opacity": 0, "y": -20 },
+        "transition": { "duration": 0.4, "ease": "easeOut" }
+      },
+      "hover": {
+        "scale": 1.02,
+        "transition": { "duration": 0.2 }
+      }
+    },
+    "assets": {
+      "images": {
+        "login_hero": {
+          "url": "https://images.unsplash.com/photo-1748780571694-ec059afa3c3a?crop=entropy&cs=srgb&fm=jpg&q=85",
+          "alt": "Abstract curved architecture in warm beige",
+          "usage": "Right side of Login/Signup split screen. Object-fit cover."
+        },
+        "signup_hero": {
+          "url": "https://images.unsplash.com/photo-1642957096727-b85727004b48?crop=entropy&cs=srgb&fm=jpg&q=85",
+          "alt": "Soft fabric abstract 3D render",
+          "usage": "Right side of Signup split screen. Object-fit cover."
+        },
+        "logo_placeholder": {
+          "url": "https://images.unsplash.com/photo-1572596116404-98f227c01ac1?crop=entropy&cs=srgb&fm=jpg&q=85",
+          "alt": "Ceramic texture",
+          "usage": "Use as a texture overlay or abstract logo mark if needed."
+        }
+      },
+      "icons": {
+        "library": "lucide-react",
+        "style": "Stroke width 1.5px or 2px. Rounded joins."
+      }
+    }
+  },
+  "instructions_to_main_agent": {
+    "general": [
+      "Implement the 'Organic & Earthy' theme strictly. No cold greys.",
+      "Use 'Manrope' for all Headings and 'Plus Jakarta Sans' for body text. Import them via Google Fonts in index.css.",
+      "Ensure the Chat Interface feels 'breathable'. Max-width for chat content should be 800px centered.",
+      "The Sidebar must be collapsible on mobile and have a 'glassy' feel on desktop (bg-[#F4F1DE]/80 backdrop-blur-md).",
+      "Login/Signup pages should use a Split Layout: Left side form, Right side image (use the provided URLs).",
+      "AI Typing animation is CRITICAL. Use framer-motion to reveal text word-by-word.",
+      "Stop button must be visible only when AI is generating.",
+      "Use 'sonner' for all toast notifications."
+    ],
+    "files_to_create": [
+      "src/pages/Login.js",
+      "src/pages/Signup.js",
+      "src/pages/Chat.js",
+      "src/components/ChatSidebar.js",
+      "src/components/ChatMessage.js",
+      "src/components/ChatInput.js"
+    ],
+    "tailwind_customization": [
+      "Extend tailwind.config.js with the specific colors provided in 'colors.palette'.",
+      "Add 'Manrope' and 'Plus Jakarta Sans' to fontFamily config."
+    ]
+  },
+  "universal_guidelines": [
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy",
+    "Use glass-morphism effects with backdrop filters (12-24px blur)",
+    "You MUST NOT apply universal transition. Eg: transition: all. This results in breaking transforms. Always add transitions for specific interactive elements like button, input excluding transforms",
+    "You MUST NOT center align the app container, ie do not add .App { text-align: center; } in the css file. This disrupts the human natural reading flow of text",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations & color relevant to the app style",
+    "NEVER: use AI assistant Emoji characters like 🤖🧠💭💡🔮🎯📚🎭🎬🎪🎉🎊🎁🎀🎂🍰🎈🎨🎰💰💵💳🏦💎🪙💸🤑📊📈📉💹🔢🏆🥇 etc for icons.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations. Static = dead.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Subtle grain textures, noise overlays, custom cursors, selection states, and loading animations: separates good from extraordinary.",
+    "Main agent relies on these image URLs. Missing categories (especially sponsor logos) = main agent will use placeholder text which is FORBIDDEN",
+    "Prioritize using pre-existing components from src/components/ui when applicable",
+    "Create new components that match the style and conventions of existing components when needed",
+    "Examine existing components to understand the project's component patterns before creating new ones",
+    "Components MUST use named exports (export const ComponentName = ...)",
+    "Pages MUST use default exports (export default function PageName() {...})",
+    "Use sonner for toasts. Sonner component are located in /app/src/components/ui/sonner.tsx"
+  ]
+}
