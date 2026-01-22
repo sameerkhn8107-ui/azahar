@@ -626,7 +626,7 @@ async def chat_stream(request: ChatRequest):
             
             # Create streaming response with Groq
             stream = groq_client.chat.completions.create(
-                model="llama-3.3-70b-versatile",
+                model="Llama 3.1 8B Instant ",
                 messages=messages,
                 stream=True,
                 max_tokens=3072,
@@ -682,7 +682,7 @@ async def chat_simple(request: ChatRequest):
         
         # Get response from Groq
         completion = groq_client.chat.completions.create(
-            model="llama-3.3-70b-versatile",
+            model="Llama 3.1 8B Instant ",
             messages=messages,
             max_tokens=2048,
             temperature=0.7,
@@ -741,7 +741,7 @@ Rules:
 - Return JSON ONLY, no other text"""
 
         completion = groq_client.chat.completions.create(
-            model="llama-3.3-70b-versatile",
+            model="Llama 3.1 8B Instant ",
             messages=[
                 {"role": "system", "content": "You are a JSON extraction assistant. Return only valid JSON, no other text."},
                 {"role": "user", "content": prompt}
